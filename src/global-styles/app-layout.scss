@@ -1,0 +1,68 @@
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0px;
+    max-width: 100%;
+    &.wrap {
+      flex-wrap: wrap;
+    }
+    &.inline {
+      display: inline-flex;
+    }
+    &.vertical {
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-height:0;
+    }
+    &.center-main {
+      justify-content: center;
+    }
+    &.center-cross {
+      align-items: center;
+    }
+  
+    .spacer {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      &.shrink {
+        flex-shrink: 1;
+      }
+    }
+  }
+  .scroll {
+    overflow: auto;
+    height: 100%;
+    min-width: 0px;
+    max-width: 100%;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      display: none;
+    }
+  }
+  
+  .full-w {
+    width: 100%;
+  }
+  
+  .full-h {
+    height: 100%;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
